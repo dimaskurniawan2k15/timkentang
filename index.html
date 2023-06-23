@@ -4,86 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="assets/img/Logo.jpg" type="image/x-icon">
-
-  <!-- REMIX ICONS -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!-- CSS -->
+  <title>My Website</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-
-  <title>D-Tech</title>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace();
+  </script>
 </head>
 
 <body>
-  <!-- HEADER -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo">D-Tech</a>
+      <a href="#" class="nav__logo">Logo</a>
 
       <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
+        <ul class="nav__list grid">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">Home</a>
+            <a href="#home" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact Us</a>
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
-
-        <div class="nav__close" id="nav-close">
-          <i class="ri-close-line"></i>
-        </div>
+        <i class="ri-close-line" id="nav-close"></i>
       </div>
 
-      <div class="nav__btns">
-        <!-- Theme change button -->
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
-        </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-fill"></i>
       </div>
     </nav>
   </header>
 
   <main class="main">
     <!-- HOME -->
-    <section class="home" id="home">
+    <section class="home section" id="home">
       <div class="home__container container grid">
-        <img src="assets/img/Logo.jpg" alt="" class="home__img">
-
-        <div class="home__data">
-          <h1 class="home__title">
-            D-Tech
-          </h1>
-          <p class="home__description">
-            Selamat datang di D-Tech, kami adalah tim yang berdedikasi dalam menghadirkan solusi teknologi informasi
-            yang inovatif dan terpercaya. Kami menyediakan layanan berkualitas tinggi untuk membantu Anda mencapai tujuan bisnis
-            Anda melalui kekuatan teknologi.
-          </p>
-          <a href="#contact" class="button button--flex">
-            Hubungi Kami <i class="ri-arrow-right-down-line button__icon"></i>
-          </a>
-        </div>
-
-        <div class="home__social">
-          <span class="home__social-follow">Follow Us</span>
-
-          <div class="home__social-links">
-            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="https://www.facebook.com/" target="_blank" class="home__social-icon">
               <i class="ri-facebook-fill"></i>
             </a>
-            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+            <a href="https://www.instagram.com/" target="_blank" class="home__social-icon">
               <i class="ri-instagram-line"></i>
             </a>
-            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+            <a href="https://twitter.com/" target="_blank" class="home__social-icon">
               <i class="ri-twitter-fill"></i>
+            </a>
+          </div>
+
+          <div class="home__img">
+            <img src="assets/img/home.png" alt="Home Image">
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">Welcome to My Website</h1>
+            <h3 class="home__subtitle">I'm a Web Developer</h3>
+            <p class="home__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+              distinctio fuga repellendus quasi hic fugit impedit? Aliquid doloribus perferendis iste
+              distinctio vel veritatis tempora? Incidunt.</p>
+            <a href="#contact" class="button button--flex">
+              Contact Me <i class="ri-send-plane-fill button__icon"></i>
             </a>
           </div>
         </div>
@@ -91,159 +80,41 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about section container" id="about">
-      <div class="about__container grid">
-        <img src="assets/img/gambar.jpg" alt="" class="about__img">
-
-        <div class="about__data">
-          <h2 class="section__title about__title">
-            Mengapa Memilih Kami?
-          </h2>
-          <div class="about__details">
-            <p class="about__details-description">
-              <i class="ri-checkbox-fill about__details-icon"></i>
-              Pengalaman dan Keahlian
-            </p>
-            <p class="about__details-description">
-              <i class="ri-checkbox-fill about__details-icon"></i>
-              Kualitas dan Keandalan
-            </p>
-            <p class="about__details-description">
-              <i class="ri-checkbox-fill about__details-icon"></i>
-              Kolaborasi yang Kuat
-            </p>
-            <p class="about__details-description">
-              <i class="ri-checkbox-fill about__details-icon"></i>
-              Dukungan dan Layanan Pelanggan
-            </p>
-          </div>
-        </div>
+    <section class="about section" id="about">
+      <div class="about__container container grid">
+        <!-- ... About section content ... -->
       </div>
     </section>
 
-    <!-- STEPS -->
-    <section class="steps section container">
-      <div class="steps__bg">
-        <h2 class="section__title-center steps__title">
-          Team-Kentang
-        </h2>
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+      <div class="services__container container grid">
+        <!-- ... Services section content ... -->
+      </div>
+    </section>
 
-        <div class="steps__container grid">
-          <div class="steps__card">
-            <div class="steps__card-number">01</div>
-            <div class="steps__card-profile">
-              <img src="assets/img/team5.jpg" alt="Team Member 1">
-            </div>
-            <h3 class="steps__card-title">Dimas Kurniawan</h3>
-            <p class="steps__card-description">
-              MTCNA | MTCRE | RCNA
-            </p>
-          </div>
-
-          <div class="steps__card">
-            <div class="steps__card-number">02</div>
-            <div class="steps__card-profile">
-              <img src="assets/img/team3.jpg" alt="Team Member 2">
-            </div>
-            <h3 class="steps__card-title">Robby Maulana Ihsan</h3>
-            <p class="steps__card-description">
-              Java is the key
-            </p>
-          </div>
-
-          <div class="steps__card">
-            <div class="steps__card-number">03</div>
-            <div class="steps__card-profile">
-              <img src="assets/img/team7.jpg" alt="Team Member 3">
-            </div>
-            <h3 class="steps__card-title">Daffa Bagus Radityo</h3>
-            <p class="steps__card-description">
-              Family is not just people who have blood ties
-            </p>
-          </div>
-
-          <div class="steps__card">
-            <div class="steps__card-number">04</div>
-            <div class="steps__card-profile">
-              <img src="assets/img/team4.jpg" alt="Team Member 4">
-            </div>
-            <h3 class="steps__card-title">Muzaki Abdullah Irsyad</h3>
-            <p class="steps__card-description">
-              Everyday is a new challenge
-            </p>
-          </div>
-        </div>
+    <!-- PORTFOLIO -->
+    <section class="portfolio section" id="portfolio">
+      <div class="portfolio__container container grid">
+        <!-- ... Portfolio section content ... -->
       </div>
     </section>
 
     <!-- CONTACT -->
     <section class="contact section" id="contact">
       <div class="contact__container container grid">
-        <div class="contact__info">
-          <h3 class="section__title contact__title">
-            Hubungi Kami
-          </h3>
-          <p class="contact__description">
-            Silakan hubungi kami jika Anda memiliki pertanyaan atau ingin berdiskusi tentang proyek yang ingin Anda lakukan.
-            Kami dengan senang hati akan membantu Anda.
-          </p>
-
-          <div class="contact__info-icons">
-            <div>
-              <i class="ri-map-pin-line contact__info-icon"></i>
-              <span class="contact__info-text">Jl. Contoh Alamat No. 123</span>
-            </div>
-            <div>
-              <i class="ri-mail-line contact__info-icon"></i>
-              <span class="contact__info-text">info@example.com</span>
-            </div>
-            <div>
-              <i class="ri-phone-line contact__info-icon"></i>
-              <span class="contact__info-text">123-456-789</span>
-            </div>
-          </div>
-
-          <div class="contact__social-icons">
-            <a href="https://www.facebook.com/" target="_blank" class="contact__social-icon">
-              <i class="ri-facebook-fill"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" class="contact__social-icon">
-              <i class="ri-instagram-line"></i>
-            </a>
-            <a href="https://twitter.com/" target="_blank" class="contact__social-icon">
-              <i class="ri-twitter-fill"></i>
-            </a>
-          </div>
-        </div>
-
-        <form action="#" class="contact__form grid">
-          <div class="contact__inputs grid">
-            <div class="contact__content">
-              <label for="name" class="contact__label">Nama</label>
-              <input type="text" class="contact__input" id="name" required>
-            </div>
-
-            <div class="contact__content">
-              <label for="email" class="contact__label">Email</label>
-              <input type="email" class="contact__input" id="email" required>
-            </div>
-          </div>
-
-          <div class="contact__content">
-            <label for="message" class="contact__label">Pesan</label>
-            <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
-          </div>
-
-          <div>
-            <button type="submit" class="button button--flex">
-              Kirim Pesan <i class="ri-send-plane-fill button__icon"></i>
-            </button>
-          </div>
-        </form>
+        <!-- ... Contact section content ... -->
       </div>
     </section>
+  </main>
 
-    <!-- JS -->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <!-- ... Footer content ... -->
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
