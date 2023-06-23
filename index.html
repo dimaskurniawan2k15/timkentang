@@ -1,122 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D-Tech</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" href="assets/img/Logo.jpg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-</head>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/Logo.jpg" type="image/x-icon">
 
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                D-Tech
-            </a>
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact Us</a>
-                    </li>
-                </ul>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
+        <title>D-Tech</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    D-Tech
+                </a>
 
-            <div class="nav__btns">
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <img src="assets/img/Logo.jpg" alt="" class="home__img">
-
-                <div class="home__data">
-                    <h1 class="home__title">
-                        D-Tech
-                    </h1>
-                    <p class="home__description">
-                        Welcome to D-Tech, we are a dedicated team in providing innovative and reliable information technology solutions.
-                        We offer high-quality services to help you achieve your business goals through the power of technology.
-                    </p>
-                    <a href="#contact" class="button button--flex">
-                        Contact Us <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
-                </div>
-
-                <div class="home__social">
-                    <span class="home__social-follow">Follow Us</span>
-
-                    <div class="home__social-links">
-                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                            <i class="ri-facebook-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
-                            <i class="ri-linkedin-box-fill"></i>
-                        </a>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="about section" id="about">
-            <h2 class="section__title">About Us</h2>
-            <span class="section__subtitle">We are a dedicated team in providing the best IT solutions</span>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-            <div class="about__container container grid">
-                <img src="assets/img/about.jpg" alt="" class="about__img">
-
-                <div class="about__data">
-                    <p class="about__description">
-                        D-Tech is an information technology company focused on developing innovative IT solutions.
-                        We collaborate with clients from various industries to help them gain a competitive advantage
-                        through the application of the right technology.
-                    </p>
-                    <p class="about__description">
-                        Our team consists of experienced professionals in various IT fields, including software development,
-                        data analysis, information security, and IT infrastructure. We are committed to providing reliable,
-                        efficient, and tailored solutions to meet our clients' needs.
-                    </p>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </nav>
+        </header>
 
-        <section class="contact section container" id="contact">
-            <div class="contact__container grid">
-                <!-- ... Konten Contact ... -->
-            </div>
-        </section>
-    </main>
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/Logo.jpg" alt="" class="home__img">
 
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <!-- ... Konten Footer ... -->
-        </div>
-    </footer>
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            D-Tech
+                        </h1>
+                        <p class="home__description">
+                            Selamat datang di D-Tech, kami adalah tim yang berdedikasi dalam menghadirkan solusi teknologi informasi
+                            yang inovatif dan terpercaya. Kami menyediakan layanan berkualitas tinggi untuk membantu Anda mencapai tujuan bisnis
+                            Anda melalui kekuatan teknologi.
+                        </p>
+                        <a href="#contact" class="button button--flex">
+                            Hubungi Kami <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
 
-    <script src="assets/js/main.js"></script>
-</body>
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
 
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/gambar.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Mengapa Memilih Kami?
+                        </h2>
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Pengalaman dan Keahlian
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Kualitas dan Keandalan
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Kolaborasi yang Kuat
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Dukungan dan Layanan Pelanggan
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Team-Kentang
+                    </h2>
+
+                        <div class="steps__container grid">
+                            <div class="steps__card">
+                                <div class="steps__card-number">01</div>
+                                <div class="steps__card-profile">
+                                    <img src="assets/img/team5.jpg"></div>
+                                <h3 class="steps__card-title">Dimas Kurniawan</h3>
+                                <p class="steps__card-description">
+                                    MTCNA | MTCRE | RCNA
+                                </p>
+                            </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <div class="steps__card-profile">
+                                <img src="assets/img/team3.jpg"></div>
+                            <h3 class="steps__card-title">Robby Maulana Ihsan</h3>
+                            <p class="steps__card-description">
+                                Java is the key
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <div class="steps__card-profile">
+                                <img src="assets/img/team7.jpg"></div>
+                            <h3 class="steps__card-title">Daffa Bagus Radityo</h3>
+                            <p class="steps__card-description">
+                                Family is not just people who have blood ties
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">04</div>
+                            <div class="steps__card-profile">
+                                <img src="assets/img/team4.jpg"></div>
+                            <h3 class="steps__card-title">Muzaki Abdullah Irsyad</h3>
+                            <p class="steps__card-description">
+                                Everyday is a new challenge
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +999 888 777
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    D-Tech@email.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+            </section>
+            <p class="footer__copy">&#169; D-Tech. All rigths reserved</p>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
